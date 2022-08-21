@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#text, #author {
+  animation: fade-in-out 2s;
+}
+
+#quote-box {
+  background-color: white;
+  padding: 50px 50px 100px 50px;
+  width: 500px;
+  min-height: fit-content;
+}
+
+#text {
+  font-size: 26px;
+  text-align: center;
+}
+#author {
+  float: right;
+  margin: 0;
+}
+#author-div {
+  height: 50px;
+  width: 100%;
+}
+
+#text::before {
+  content: ' ';
+}
+
+#author::before {
+  content: '- ';
+}
+
+#new-quote-button {
+  padding: 15px;
+  float: right;
+  color: white;
+}
+
+#twitter {
+  float: left;
+}
+
+button, a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover, a:hover {
+  filter: brightness(115%);
+}
+
+a {
+  padding: 10px;
+}
+
+#by-text {
+  text-align: center;
+  color: white;
+}
+.fa-twitter::before{
+  color: white;
+}
+
+@keyframes fade-in-out {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
