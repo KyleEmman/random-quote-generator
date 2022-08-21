@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 #text, #author {
   animation: fade-in-out 2s;
 }
@@ -14,7 +9,7 @@
 #quote-box {
   background-color: white;
   padding: 50px 50px 100px 50px;
-  width: 500px;
+  width: 43vw;
   min-height: fit-content;
 }
 
@@ -62,7 +57,7 @@ button:hover, a:hover {
 }
 
 a {
-  padding: 10px;
+  padding: 15px;
 }
 
 #by-text {
@@ -76,4 +71,23 @@ a {
 @keyframes fade-in-out {
   0% {opacity: 0}
   100% {opacity: 1}
+}
+
+@media only screen and (max-width: 600px) {
+  #quote-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 50px;
+  }
+  #author-div {
+    text-align: center;
+    width: fit-content;
+  }
+  #text {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
 }

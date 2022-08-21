@@ -73,7 +73,7 @@ function App() {
       <section id="quote-box">
         <p id="text" ref={textRef} key={Math.random()}>
           {quoteData.quote}
-        </p>
+        </p>  
         <div id="author-div">
           <p id="author" ref={authorRef} key={Math.random()}>
             {quoteData.author}
