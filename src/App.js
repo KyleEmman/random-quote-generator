@@ -79,8 +79,8 @@ function App() {
             {quoteData.author}
           </p>
         </div>
-        <button id= "new-quote-button" onClick={getData} ref={newQuoteRef}>New quote</button>
-        <a href={`https://twitter.com/intent/tweet?hashtags=quotes&text="${quoteData.quote} " ${quoteData.author}`} target="_blank" id="twitter" ref={twitterRef}><i className='fa fa-twitter white-color'></i></a>
+        <button id= "new-quote" onClick={getData} ref={newQuoteRef}>New quote</button>
+        <a href={`https://twitter.com/intent/tweet?hashtags=quotes&text="${quoteData.quote} " ${quoteData.author}`} target="_blank" id="tweet-quote" ref={twitterRef}><i className='fa fa-twitter white-color'></i></a>
       </section>
     </main>
     <div id="by-text"><p>By Kyle E. F. O.</p></div>

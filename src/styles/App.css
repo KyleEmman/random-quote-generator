@@ -34,13 +34,13 @@
   content: '- ';
 }
 
-#new-quote-button {
+#new-quote {
   padding: 15px;
   float: right;
   color: white;
 }
 
-#twitter {
+#tweet-quote {
   float: left;
 }
 
