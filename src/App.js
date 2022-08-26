@@ -28,7 +28,7 @@ function App() {
   const randomProp = propFinder(randomColorObject)
 
   async function fetchData () {
-    const response = await fetch("https://goquotes-api.herokuapp.com/api/v1/random?count=1")
+    const response = await fetch("https://type.fit/api/quotes")
     const quotes = await response.json()
     return quotes
   }
@@ -39,12 +39,14 @@ function App() {
 
   function getData () {
     fetchData().then(data => {
+      const randomIndex = Math.floor(Math.random() * (1600 - 1 + 1) + 1)
       setQuoteData(
           {
-            quote: data.quotes[0].text,
-            author: data.quotes[0].author
+            quote: data[randomIndex].text,
+            author: data[randomIndex].author
           }
         )
+      console.log(Object.keys(data).length)
     })
 
     
